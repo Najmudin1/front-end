@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color:grey;
+}
+
+html{
+	font: normal 16px sans-serif;
+	color: black;
+    min-width: 350px;
+}
+
+ul,nav{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+
+
+	opacity: 0.9;
+}
+
+
+}
+/*Media query break points with condition for responsiveness by size of screen/pixle*/
+
+@media screen and (max-width: 1000px){
+
+	section{
+		padding: 100px 50px;
+	}
+
+}
+
+@media screen and (max-width: 600px){
+
+	section{
+		padding: 80px 30px;
+	}
+
+}
