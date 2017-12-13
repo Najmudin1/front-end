@@ -2,7 +2,7 @@
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage, 2000); //seconds load animation is run
+    myVar = setTimeout(showPage, 1000); //seconds load animation is run
 }
 
 function showPage() {

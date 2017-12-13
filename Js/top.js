@@ -1,13 +1,16 @@
-// back to top button JS for personal site
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 30) {        // If page is scrolled more than 30px show button if not hide
-        $('#back-top').fadeIn(100);
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
     } else {
-        $('#back-top').fadeOut(200);
+        document.getElementById("myBtn").style.display = "none";
     }
-});
-$('#back-top').click(function() {
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body when clicked button
-    }, 500);
-});
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
