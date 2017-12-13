@@ -1,13 +1,15 @@
+/*-------------
+ 	Basic Layout defined
+-------------*/
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color:grey;
 }
 
 html{
 	font: normal 16px sans-serif;
-	color: black;
+	color: #ffffff;
     min-width: 350px;
 }
 
@@ -23,8 +25,38 @@ a{
 	opacity: 0.9;
 }
 
-
+a:hover{
+	opacity: 1;
 }
+
+a.btn{
+	color: #ffffff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #2196F3;
+	font-weight: 800;
+	text-align: center;
+}
+
+/*a devider of sections */
+hr{ 
+	width: 350px;
+	height: 3px;
+	background-color: #2196F3;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 125px 100px;
+}
+
+
 /*Media query break points with condition for responsiveness by size of screen/pixle*/
 
 @media screen and (max-width: 1000px){
@@ -42,6 +74,328 @@ a{
 	}
 
 }
+
+section h3.title{
+	color: #ffffff;
+	text-transform: capitalize;
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+section p{
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/* -- Back to top -- */
+#back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#back-top i {
+    color: #ffffff;
+    margin: 0;
+    position: relative;
+    left: 1px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#back-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#back-top:hover i {
+    color: #ffffff;
+    top: 5px;
+}
+
+/*-------------
+ 	Header section
+-------------*/
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #ffffff;
+	padding: 35px 100px 0;
+}
+
+header h2{
+	font-family: 'Quicksand', sans-serif;
+}
+
+header nav{
+	display: flex;
+}
+header ul{
+    display: flex;
+}
+
+header nav li{
+	margin: 0 15px;
+}
+header nav ul{
+    margin: 0 15px;
+}
+header nav li:first-child{
+	margin-left: 0;
+}
+header nav ul:first-child{
+    margin-left: 0;
+}
+header nav li:last-child{
+	margin-right: 0;
+}
+header nav ul:last-child{
+    margin-right: 0;
+}
+
+/*Media query break points with condition for responsiveness for the header section for diffrent media size*/
+@media screen and (max-width: 1000px){
+	header{
+		padding: 20px 50px;
+	}
+}
+
+
+@media screen and (max-width: 700px){
+	header{
+		flex-direction: column;
+	}
+
+	header h2{
+		margin-bottom: 15px;
+	}
+}
+
+/*-------------
+ 	Site Load animation
+-------------*/
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #404040;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+	 border-top: 16px solid blue;
+     border-right: 16px solid green;
+     border-bottom: 16px solid red;
+     border-left: 16px solid pink;
+}
+/*Spin*/
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+/*animation*/
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 }
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
+    to{ bottom:0; opacity:1 }
+}
+
+#loaderDiv {
+    display: none;
+    text-align: center;
+}
+/*----END load animation code-----*/
+
+/*----------------
+ 	First Section
+----------------*/
+
+.first{
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #ffffff;
+	text-align: center;
+}
+
+.first .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #ffffff;
+	z-index: -1;
+
+}
+
+.first .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #3c3f40;
+	opacity: 0.75;
+}
+
+.first h1{
+	font: bold 60px 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+}
+
+.first h3{
+	font: normal 28px 'Open Sans', sans-serif;
+	margin-bottom: 40px;
+}
+
+
+/*Media query break points with condition for various size of display*/
+@media screen and (max-width: 800px){
+
+	.first{
+		min-height: 600px;
+	}
+
+	.first h1{
+		font-size: 48px;
+	}
+
+	.first h3{
+		font-size: 24px;
+	}
+
+
+
+}
+/*setting back color for section my work with slide show*/
+.my-work{
+    background-color: #404040;
+}
+
+/*----------------------
+ 	My Skills/Interests Reference: w3school
+----------------------*/
+
+.skills{
+	background-color: #404040;
+}
+
+.skills .grid li{
+	padding: 0 32px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.skills .grid li i{
+    font-size: 52px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.skills .grid li h4{
+	color: #fff;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.skills .grid li p{
+    margin: 0;
+}
+/*Media query break points with condition*/
+
+@media screen and (max-width: 1000px){
+
+	.skills .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.skills .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+@media screen and (max-width: 600px){
+
+	.skills .grid li{
+		flex-basis: 100%;
+	}
+
+}
+.contentContainer {
+    background: #404040;
+    padding: 20px;
+    max-width: 1080px;
+    min-width: 320px;
+    margin: 15vh auto;
+    border-radius: 10px;
+    border: solid 5px #fff;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
 /*skill Bars*/
 
 .skillBar {
@@ -100,3 +454,144 @@ a{
 .value-100 { width: 100%; }
 
 
+
+/*--------------------
+ 	Project Description Section
+--------------------*/
+
+.projectDescription{
+	background-color: #404040;
+}
+
+.projectDescription .projDec{
+	text-align: center;
+	width: 80%;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.projectDescription .projectCase{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.projectDescription .projectCase:last-child{
+    margin-bottom: 0;
+}
+/*Media query break points with condition */
+@media screen and (max-width: 1000px){
+
+	.projectDescription .projDec{
+		font-size: 20px;
+	}
+
+	.projectDescription .projectCase{
+	    font-size: 16px;
+	}
+
+}
+
+
+
+/*---------------------
+ 	Contact Section
+---------------------*/
+
+.contact{
+	background-color: #404040;
+}
+
+.contact form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 800px;
+	width: 80%;
+}
+
+.contact form input{
+	padding: 15px;
+	flex: 1;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #555;
+}
+
+.contact form .btn{
+	padding: 18px 42px;
+}
+
+/*Media query break points with condition */
+@media screen and (max-width: 800px){
+
+	.contact form input{
+		flex-basis: 100%;
+		margin: 0 0 20px 0;
+	}
+
+}
+
+/*About small section */
+.about{
+	background-color: #404040;
+}
+
+/*-------------
+ 	Footer
+-------------*/
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #404040;
+	background-color: #414a4f;
+	padding: 60px 0;
+}
+
+footer ul{
+	display: flex;
+	margin-bottom: 25px;
+	font-size: 32px;
+}
+
+footer ul li{
+	margin: 0 8px;
+}
+
+footer ul li:first-child{
+	margin-left: 0;
+}
+
+footer ul li:last-child{
+	margin-right: 0;
+}
+
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(248, 255, 249, 0.6);
+	margin-bottom: 10px;
+}
+
+footer p a{
+	color: #fff;
+}
+footer .fa-github-square, .fa-envelope {
+    color: white;
+}
+
+/*Media query break points with condition to be met*/
+
+@media (max-width: 700px){
+
+	footer{
+		padding: 80px 15px;
+	}
+
+}

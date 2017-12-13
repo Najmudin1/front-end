@@ -1,33 +1,56 @@
 <!DOCTYPE html>
+
 <html>
 <head>
- <title>Personal Project Site</title>
- <link rel="stylesheet" href="CSS/STYLES.css">
- </head>
- 
- <body> 
- <header>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Project Site</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> -->
+   
+    <link rel="stylesheet" href="css/styles.css">
 
-		<h2><a href="#">Najmudin saqib</a></h2>
+</head>
+
+<body onload="myFunction()" style="margin:0";>
+
+<div id="loader"></div>
+<div style="display:none;" id="loaderDiv" class="animate-bottom">
+	<header>
+
+		<h2><a href="#">Najmudin Saqib</a></h2>
 
         <nav>
             <ul>
 			<li><a href="#home">Home</a></li>
-			<li><a href="#project">Projects</a></li>
+			 <li><a href="#about">About</a></li>
 			<li><a href="#skill">Skill</a></li>
+			<li><a href="#project">Projects</a></li>
 			<li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+               
             </ul>
 		</nav>
 		<a href="javascript:" id="back-top"><i class="icon-chevron-up"></i></a>
 
 	</header>
-		<section class="first" id="home">
-		<div class="background-image" style="background-image: url(assets/img/background.jpg);"></div>
+
+
+	<section class="first" id="home">
+		<div class="background-image" style="background-image: url(img/background.jpg);"></div>
 		<h1><strong>Welcome</strong> to My Personal Profile</h1>
-		<h3>A small responsive website project for my Front-end module.</h3>
 	</section>
 	
+   <section class="about" id="about">
+        <hr>
+        <h3 class="title">About My self:</h3>
+        <p>Currently i am a student at DMU university Leicester.
+        </p>
+
+        <p> Thank You for looking at my personal profile.</p>
+        <p>Najmundin Saqib</p>
+    </section>
+
 	<section class="skills" id="skill">
         <hr>
 		<h3 class="title">Skills</h3>
@@ -47,39 +70,71 @@
                     </div>
                 </div>
                 <div class="skillBar">
-                    <h4>Javascript</h4>
+                    <h4>JavaScript</h4>
                     <div class="skillBarContainer">
                         <div class="skillBarValue value-30"></div>
                     </div>
                 </div>
-                <div class="skillBar">
+             <div class="skillBar">
                     <h4>SQL</h4>
-                    <div class="skillBarContainer">
-                        <div class="skillBarValue value-60"></div>
-                    </div>
-                </div>
-                <div class="skillBar">
-                    <h4>C#</h4>
-                    <div class="skillBarContainer">
-                        <div class="skillBarValue value-50"></div>
-                    </div>
-                </div>
-                <div class="skillBar">
-                    <h4>XHTML</h4>
                     <div class="skillBarContainer">
                         <div class="skillBarValue value-80"></div>
                     </div>
                 </div>
             </div>
 
+	</section>
+
+
+	<section class="projectDescription">
+        <hr>
+		<h3 class="title">My Projects Description Bellow:</h3>
+
+		<p class="projDec" id="lara">Laravel:Job portal for final year. <br> This project should allow its users to login/ register and allow to search jobs via search function and filter.</p>
+		<p class="projectCase">Final year project</p>
+
+		<p class="projDec" id="web">Slim: Developed an M2M application/site. <br> This project was a group work done for one of my course module. <br>
+            It allowed users to login and check messages and for admins to send messages. <br> It put emphasis on its security.
+        </p>
+		<p class="projectCase">Secure Web Application Project</p>
+
+		<p class="projDec" id="java">Scala: Developed a Tautology checker. <br> This project involved me
+            developing a tautology checker which checked for a tautology in the proposition and generated a Truth table
+            for that proposition. It allowed me to gain valuable functional development experience regards to how to think and develop in functional manner. </p>
+		<p class="projectCase">Functional Development</p>
+
+        <p class="projDec" id="frontend">HTML/CSS/JS: This it self is a project which ive done. <br> This project is developed using only CSS/HTML and Js.
+            For the project all used 3rd party are referenced in read file and can be view on git hub link to the git hub is in footer below.
+        </p>
+        <p class="projectCase">Front end development</p>
+	</section>
+
+
+	<section class="contact" id="contact">
+		<h3 class="title">Contact Me</h3>
+		<p>Please leave your email below, reply time is 3 to 5 days.</p>
+		<hr>
+		<form>
+			<input type="email" placeholder="Email">
+            <!-- Due to having no back end the form does not work but if implemented with backend it would work fine with few amendments -->
+			<a href="#" class="btn">Contact</a>
+		</form>
+	</section>
  
- </body>
- 
- <footer> 
- 
- 
- </footer>
- 
- </html>
- 
- 
+	<footer>
+		<ul>
+			<li><a href="https://github.com/Najmudin1"><i class="fa fa-github-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+
+		</ul>
+		<p>&copy; Copyright by Najmudin saqib</p>
+
+	</footer>
+</div>
+
+</body>
+<script src="js/load.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/top.js"></script>
+<script src="/js/slide.js"></script>
+</html>
