@@ -100,6 +100,8 @@ There were no errors.
 
 <img src="https://user-images.githubusercontent.com/25456017/34417501-e20f3806-ebf0-11e7-9ff9-2fb859ca60ba.PNG" width="500px" alt="html validation fiex">
 
+however when I upload to git hub I do get javascript error and I could not reslove them but the on my own computer it works fine.
+
 #### 13. References
 
  * loader- javascript
