@@ -496,25 +496,28 @@ header nav ul:last-child{
 	background-color: #404040;
 }
 
-.contact form{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 800px;
-	width: 80%;
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
-.contact form input{
-	padding: 15px;
-	flex: 1;
-	margin-right: 30px;
-	font-size: 18px;
-	color: #555;
+input[type=submit] {
+    background-color: #1E90FF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.contact form .btn{
-	padding: 18px 42px;
+input[type=submit]:hover {
+    background-color: #228B22;
 }
 
 /*Media query break points with condition */

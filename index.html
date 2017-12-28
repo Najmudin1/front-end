@@ -88,6 +88,17 @@
                     </div>
                 </div>
             </div>
+			
+			  <form id="searchForm">
+    <label for="wikiQuery">Search: </label>
+    <input id="wikiQuery" type="text" placeholder="">
+    <input type="submit">
+  </form>
+
+  <ul id="demo"></ul>
+			
+			
+			
 
 	</section>
 
@@ -95,20 +106,20 @@
 	<section class="projectDescription" id="project">
         <hr>
 		<h3 class="title">My Projects Description Bellow:</h3>
-
+		<img src="img/file1.png" alt="file1">
 		<p class="projDec" id="lara">Hotel:Booking system for final year. <br> This project should allow its users to login/ register and  search and book rooms.</p>
 		<p class="projectCase">comic</p>
-
+<img src="img/file1.png" alt="file1">
 		<p class="projDec" id="web">Comic: Developed using javascript. <br> This project was a individaul work done for my Busniess technology module. <br>
             It showed a comic which I created using photoshop. <br>
         </p>
 		<p class="projectCase">Secure Web Application Project</p>
-
+<img src="img/file1.png" alt="file1">
 		<p class="projDec" id="java">Scala: Developed a Tautology checker. <br> This project involved me
             developing a tautology checker which checked for a tautology in the proposition and generated a Truth table
             for that proposition. It allowed me to gain valuable functional development experience regards to how to think and develop in functional manner. </p>
 		<p class="projectCase">Functional Development</p>
-
+<img src="img/file1.png" alt="file1">
         <p class="projDec" id="frontend">HTML/CSS/JS: This it self is a project which ive done. <br> This project is developed using only CSS/HTML and Js.
             For the project all used 3rd party are referenced in read file and can be view on git hub link to the git hub is in footer below.
         </p>
@@ -120,11 +131,21 @@
 		<h3 class="title">Contact Me</h3>
 		<p>Please leave your email below, reply time is 3 to 5 days.</p>
 		<hr>
-		<form>
-			<input type="email" placeholder="Email">
-            <!-- Due to having no back end the form does not work but if implemented with backend it would work fine with few amendments -->
-			<a href="#" class="btn">Contact</a>
-		</form>
+	  <form action="/action_page.php">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="name" placeholder="Name">
+
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="email" placeholder="Email">
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" name="phone" placeholder="Phone">
+
+    <label for="subject">Text</label>
+    <textarea id="subject" name="subject" placeholder="Your Text" style="height:200px"></textarea>
+
+    <input type="submit" onclick="myMessage()" value="Send">
+  </form>
 	</section>
 
 	<footer>
@@ -140,6 +161,8 @@
 
 </body>
 <script src="js/load.js"></script>
+
 <script src="js/top.js"></script>
 
+<script src="js/api.js"></script>
 </html>
