@@ -1,3 +1,9 @@
+# Project Summary
+For this assignment, I will be building a semantic HTML5, CSS and JavaScript website with a responsive design. I have decided make a website taht is related to me and it can be used in the future so I will be creating a personal profile page.  
+
+
+
+
 ## Portfolio | CV Website
 By Najmudin saqib P15225267
 
