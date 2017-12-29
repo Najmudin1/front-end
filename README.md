@@ -1,6 +1,17 @@
 # Project Summary
-For this assignment, I will be building a semantic HTML5, CSS and JavaScript website with a responsive design. I have decided make a website taht is related to me and it can be used in the future so I will be creating a personal profile page.  
+For this assignment, I will be building a semantic HTML5, CSS and JavaScript website with a responsive design. I have decided make a website that is related to me and it can be used in the future so I will be creating a personal profile page. the website will also have links to all the projects that i have done previously.   
 
+# Development
+I started developing my website by using the code availbel from the lab work that I had done
+on and using that code I started to create a base for my website and from there on 
+I added the diffrent content that was required. I clearly knew whar I wanted on the webpages becasue I hade told Dave in 
+my labs that I will be creating a website with these features and it will include certain things.
+
+# Issues
+The main issue that I faced was getting the resposiveness right becasue intailly when I made my website it was not working properly so I started again and made it mobile and then slowly expanded. in addition i found out that some of my code
+would not work when I uploaded it to git hub such as my stylesheet but I fixed that becase one of the nameing convention
+was wrong however I have used a piece of javascript which is a button that takes you to the top of the page
+and this worked on notepad but when I uploaded to git hub it was showing error. I tried to resolve it and asked friends but was unsuccessfull but overall I did not face many issues.
 
 
 
@@ -41,7 +52,7 @@ some feedback
 
 In the labs and lecture we as a group were recommeded to use navigation architecture, hence why my navigation is so easy to use.
 furhthermore i have added a sitemap in my footer so the user expirence is easy and simple for users.
-as for PARC, which are the 4 design principle, i have not used all of the in my website but i have used some such as alignment becasue as you can see in my website that everytingh is placed thoughtfully and it is connected the personal profile page.
+as for PARC, which are the 4 design principle, i have not used all of the in my website but i have used some such as alignment becasue as you can see in my website that everything is placed thoughtfully and it is connected the personal profile page.
 
 
 ---
@@ -72,7 +83,7 @@ I have used  @media queries
 ---
 #### 8. Learning & Understanding Markdown 
 
-i ahve used MARKDOWN before for my other projects so I was familiar with it.
+I have used MARKDOWN before for my other projects so I was familiar with it.
 
 <img src="https://user-images.githubusercontent.com/25456017/34417111-9ef7d37c-ebee-11e7-8ab8-8200c32ea14a.PNG" width="500px" alt=" Markdown ">
 
